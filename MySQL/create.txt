@@ -1,0 +1,33 @@
+//create database:
+create database database_name;
+
+//create tables in database:
+use database_name;
+create table tablename(
+line_name1 datatype(datalength),
+line_name2 datatype(datalength),
+);
+
+//insert datas into table:
+insert into tablename(line_name1,line_name2) value(value1,value2);
+
+//to see all datas in table:
+select * from tablename;
+
+
+
+//for example:
+create database mysql_shiyan;
+use mysql_shiyan;
+create table employee(id int(10),name char(20),phone(12));
+create table department(
+dpt_name char(20),
+dpt_phone int(12)
+);
+
+insert into employee(id,name,phone) vlaue(01,"Tom",110110110);
+insert into employee value(02,"Jack",119119119);
+insert into employee(id,name) value(03,"Rose");
+
+select * form employee;
+
